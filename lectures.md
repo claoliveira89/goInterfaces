@@ -14,3 +14,19 @@
 
 ## 55. Interfaces in Practice
 - We use interfaces to define a method set or a function set; what different functions and return types it should have.
+
+## 56. Rules of Interfaces
+
+        type interfaceName interface {
+            functionName(list of argument types) (list of return types)
+        }
+
+- Example:
+
+        type bot interface {
+            getGreeting(string, int) (string, error)
+        }
+
+- Concrete Type vs Interface Type
+    - concrete type: something that we can create a value ou of it, and access it, change it, etc... Such as map, struct, int, string, englishBot, deck...
+    - interface type: we cannot create a value of interface type.
