@@ -11,3 +11,6 @@
         $ func (englishBot) getGreeting() string {
         $   // some code here
         $ }
+
+## 55. Interfaces in Practice
+- We use interfaces to define a method set or a function set; what different functions and return types it should have.
