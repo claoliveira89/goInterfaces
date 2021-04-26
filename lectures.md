@@ -28,5 +28,11 @@
         }
 
 - Concrete Type vs Interface Type
-    - concrete type: something that we can create a value ou of it, and access it, change it, etc... Such as map, struct, int, string, englishBot, deck...
+    - concrete type: something that we can create a value out of it, and access it, change it, etc... Such as map, struct, int, string, englishBot, deck...
     - interface type: we cannot create a value of interface type.
+
+## Extra Interface Notes
+- Interfaces are not generic types. Other languages have 'generic' types - go (famously) does not.
+- Interfaces are 'implicit': we don't manually have to say that our custom type satisfies some interface.
+- Interfaces are a contract to help us manage types. GARBAGE IN -> GARBAGE OUT. If our custom type's implementation of a function is broken then interfaces won't help us!
+- Interfaces are tough. Step #1 is understanding how to read them. Understand how to read interfaces in the standard lib. Wrinting your own interfaces is tough and requires experience.     
